@@ -74,7 +74,7 @@ def allowed_file(filename):
  return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-project_server = pymongo.MongoClient('mongodb+srv://Naveen:Best2ismangodb@project1.y2jgh2e.mongodb.net/?retryWrites=true&w=majority')
+project_server = pymongo.MongoClient('')
 project_db = project_server["LDMS"]
 project_user = project_db["users"]
 project_document = project_db["document"]
