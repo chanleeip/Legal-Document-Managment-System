@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <title>Signup</title>
+    <link rel="stylesheet" href="/static/css/Registration_Page.css">
+    <link rel="script" href="/static/js/Registration_Page.js">
+    <style>
+        .submit {
+            display: flex;
+            background-color: lightpink;
+            margin: 0;
+            width: 100px;
+            align-items: center;
+            width: max-content;
+            align-items: center ;
+        }
+
+        .hi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+{% endblock %}
+
+{% block body %} 
+
+<div class="container">
+    <div class="hi">
+        <h1>Registration Form</h1>
+        <form name="registration" class="registration-form" method="post" onsubmit="return formValidation()">
+            <table >
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" name="cr_name" id="name" placeholder="your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="cr_email" id="email" placeholder="your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNumber">Phone Number:</label></td>
+                    <td><input type="number" name="cr_phone" id="phoneNumber"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        Male: <input type="radio" name="cr_gender" value="male">
+                        Female: <input type="radio" name="cr_gender" value="female">
+                        Other: <input type="radio" name="cr_gender" value="other">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="cr_password" id="password"></td>
+                </tr>
+            </table>
+
+            <div class="hoi">
+                <button  type="submit" class="submit" >Sign up</button>
+            </div>
+    </div>
+
+
+    </form>
+</div>
+</div>
+
+{% endblock %}

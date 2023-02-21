@@ -1,0 +1,112 @@
+body {
+    background: blanchedalmond;
+}
+.image{
+    display:block;
+    margin-top:1cm;
+    margin-left:16cm;
+    margin-right:15cm;
+    height:180px;
+    width:250px;
+    border-radius:800px;
+    box-shadow: 5px 5px #888888;
+}
+.ad{
+    float:left;
+    margin-top:3cm;
+    margin-left:2.2cm;
+    height:15cm;
+    width:18.8cm;
+    border-radius:30px;
+    background:rgb(255,255,255,0.1);
+    overflow:hidden;
+}
+.ex{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    height:13cm;
+    width:13cm;
+    margin-top:6cm;
+    margin-bottom:3cm;
+    padding-top:1cm;
+    padding-left:1cm;
+    padding-bottom:1cm;
+    background:#f5f5f5;
+    font-family:system-ui;
+    border-style:solid;
+    border-radius:30px;
+    border-color:white;
+    box-shadow: 4px 5px #888888;
+    align-items: center;
+}
+h1{
+    text-align:center;
+}
+span{
+    padding-left:160px;
+}
+a{
+    padding-left:160px;
+    color:#626567  ;
+}
+.las{
+    height:35px;
+    width:100px;
+    border-style: solid;
+    border-radius:30px;
+    font-family:system-ui;
+    font-weight:bold;
+    font-size:larger;
+    color:white;
+    background-color:yellowgreen;
+    font-size: larger;
+}
+.mas,.mas1{
+    border:none;
+    outline:none;
+    border-bottom:solid;
+    font-family:sans-serif;
+    font-weight:600;
+    font-size:22px;
+    text-rendering: auto;
+    text-overflow: clip;
+    touch-action: auto;
+    margin-left: -40px;
+    background-color: #f5f5f5;
+}
+.mas:hover{
+    background-color:white;
+    cursor:grab;
+}
+
+.sam{
+    height:35px;
+    width:75px;
+    border-style: solid;
+    border-radius:30px;
+    font-family:system-ui;
+    font-weight:bold;
+    font-size:larger;
+    color:white;
+    background-color:yellowgreen;
+}
+input:hover{
+    color:black;
+    cursor:grab;
+    background:white;
+}
+input:active{
+    color:black;
+    background-color:white;
+}
+input:focus{
+    color:black;
+    cursor:grab;
+    background-color:white;
+}
+.footer{
+    color:rgb(255,255,255);
+    text-decoration:none;
+    top:none;
+}

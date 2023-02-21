@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload PDF</title>
+  </head>
+  <body>
+    <h1>Upload a PDF</h1>
+    <form method="post" enctype="multipart/form-data">
+      <input type="text" name="file_name" placeholder="Enter FIle Name">
+      <input type="file" name="pdf_file" >
+      <input type="text" name="file_desc" placeholder="Enterthe Discription">
+      <input type="submit" value="Upload">
+    </form>
+    <div class="temp2">
+      {% for images in image_data %} 
+      <img src="data:image/jpeg;base64,{{ images['image'] }}" >
+      <a href="{{url_for('delete_file',id= images['key_name'] )}}">Delete</a><br><br>
+       {% endfor %}
+    
+    </div>
+  </body>
+</html>

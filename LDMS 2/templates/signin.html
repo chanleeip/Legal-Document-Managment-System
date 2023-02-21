@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/static/css/Login_Page.css">
+{% endblock %}
+
+{% block body %} 
+
+  <div class="ex">
+    <h1> LOGIN </h1>
+    <br><br>
+    <form method="post">  
+        <input class="mas" type="text" placeholder="User Name" name="username" required><br><br><br><br>
+        <input class="mas1" type="password"   placeholder="Password" name="password" required><br><br>
+        <a href="#" target="blank" style="color: blue" > forget password...?
+        <br><br><br>
+        <input class="sam" type="submit" value="Login">
+      <form>
+        <br>
+        <br>
+        <br>
+        <a href="{{url_for('signup')}}"><input  class="las" type="submit" value="Register"></a>
+  </div>    
+{% endblock %}

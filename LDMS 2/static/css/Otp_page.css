@@ -1,0 +1,96 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blanchedalmond;
+}
+.ped{
+    height:140px;
+    width:1800px;
+    background-color:white;
+    box-shadow:5px 5px 8px rgba(0,0,0,0.5);
+    font-family:'Monofett',cursive;
+    padding:10px 5px 5px 60px;
+    font-size:90px;
+    margin-top: -800px;
+    position: absolute;
+  }
+:where(.container, form, .input-field, header) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background: #fff;
+    padding: 130px 200px;
+    font-size:20px;
+    border-radius: 12px;
+    row-gap: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container header {
+    height: 90px;
+    width: 90px;
+    background: red;
+    color: #F2EBE3;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+.container h4 {
+    font-size: larger;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+form .input-field {
+    flex-direction: row;
+    height: max-content;
+}
+.input-field input {
+    height: 45px;
+    width: 42px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.input-field input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+    display: none;
+}
+#btn_verify {
+    margin-top: 25px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    pointer-events: none;
+    background: greenyellow;
+    transition: all 0.2s ease;
+}
+button{
+    border:none;
+    border-style: solid;
+    border-color: #F2EBE3;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: rgb(50,205,50);
+}

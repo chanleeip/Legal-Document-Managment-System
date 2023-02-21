@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/home.css.css">
+    <script src="https://kit.fontawesome.com/3aafa2d65b.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %} 
+
+    <img src="https://thumbs.dreamstime.com/z/multiple-file-document-icon-logo-design-element-multiple-file-document-icon-logo-design-element-white-background-122728126.jpg" class="img1">
+  <div class="button">
+    <a href="{{url_for('signin')}}"><input type="button" value="    Sign in    " class="button1"></a>&nbsp&nbsp
+    <a href="{{url_for('signup')}}"><input type="button" value="    Sign up    " class="button1"></a>
+  </div>
+
+  <div class="temp2">
+    {% for image in image_data %} 
+    <img src="data:image/jpeg;base64,{{ image }}" class="image2">
+     {% endfor %}
+  
+  </div>
+
+  <div class="footer">
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <span class="logo_name">&nbsp&nbspFollow Us On</span>
+        </div>
+      <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+
+{% endblock %}
+

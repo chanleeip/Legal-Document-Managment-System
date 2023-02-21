@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Users List</title>
+
+{% endblock %}
+
+{% block body %}
+{% include 'upnav.html' %}
+{% include 'nav.html' %} 
+
+<table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    {% for i in users %}
+    <tr>
+        <td>{{i.Name}}</td>
+        <td>{{i.Phone}}</td>
+        <td>{{i.Email}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    <title>Dashboard</title>
+    
+    <script src="https://kit.fontawesome.com/3aafa2d65b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <link rel="script" href="/static/js/drag_drop.js">
+{% endblock %}
+
+{% block body %} 
+<!-- <div class="ped">
+    DOCKER<p class="dem">&nbsp&nbsp<i class="fa-solid fa-user"></i>&nbsp&nbspProfile</p>
+</div> -->
+{% include 'upnav.html' %}
+    
+
+
+    
+
+ <input type="search" placeholder="search" id="emd"><br>
+    {% include 'nav.html' %} <br><br>
+
+        
+    
+        <div id="img_upload">
+            <button><a href="{{url_for('upload_file')}}">Upload here</a></button>
+        </div>
+
+        <br><br>
+
+        <div  id="current_user_details">
+            {% for i in users %} 
+                Name:{{i.Name}} <br>
+                Phone:{{i.Phone}}
+                
+            {% endfor %}
+         </div>
+
+
+    <div id="current_users_file">
+        {% for j in docs %} 
+        Name: {{j.name}} <br>
+        Description:{{j.Discription}} <br>
+        Time Updates :{{j.date}} <br>
+        
+        <br>
+        <button id="preview"><a href="{{url_for('preview_file',id=j.name)}}">Document</a></button>
+        <button id="delete"> <a href="{{url_for('delete_file',id=j.name)}}">Delete</a><br><br></button>
+        
+        <hr>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>OTP</title>
+<link rel="stylesheet" href="/static/css/Otp_page.css">
+<link rel="script" href="/static/js/Otp_page.js">
+{% endblock %}
+
+{% block body %} 
+
+<div class="container">
+    <header>
+        <i class="bx bxs-check-shield"></i>
+    </header>
+    <h4>Enter OTP Code</h4>
+    <form method="post">
+        <h3>{{msg}}</h3>
+            <input style="width: 150px" type="text" name="cr_otp" maxlength="6" size="6" />
+        
+        <input type="submit" value="Verify OTP" >
+    </form>
+</div>
+{% endblock %}

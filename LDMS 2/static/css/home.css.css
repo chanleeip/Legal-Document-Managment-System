@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+body{
+background: linear-gradient(-100deg,rgb(255,235,205),rgb(227,218,201));
+}
+.img1{
+  height:5rem;
+  width:5rem;
+  float:left;
+}
+.button{
+ float:right;
+ border-radius:30px;
+ margin:1rem;
+}
+.button1{
+  background-color:black;
+  color:white;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:20;
+  font-family:Nunito;
+}
+.button1:hover{
+  background-color:white;
+  color:black;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:thin;
+  font-family:Nunito;
+}
+.image2{
+margin-top: 30px;
+margin-left: 50px;
+max-height:1080px;
+max-width:1440px;
+  overflow:hidden;
+}
+
+
+/* Footer */
+.footer{
+  position: absolute;
+ 
+  left: 0;
+  right: 0;
+  margin-top: 00px;
+  height: 200px; /* adjust the height as needed */
+  background-color: #f2ebe3;
+}
+.content .top .logo-details {
+  color:black;
+  font-size: 30px;
+}
+.logo-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_name {
+  margin:10px;
+  font-size:40px;
+  font-weight: 400;
+  font-family:'Nunito',sans-serif;
+}
+.content .top .media-icons {
+  display: flex;
+  justify-content: center;
+}
+.content .top .media-icons a {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  margin:  15px;
+  padding:20px;
+  border-radius:50px;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(1):hover {
+  color: #4267b2;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(2) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(2):hover {
+  color: #1da1f2;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(3) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(3):hover {
+  color: #e1306c;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(4) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(4):hover {
+  color: #0077b5;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(5) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(5):hover {
+  color: #ff0000;
+  background: #fff;
+  transform: translateY(-3px);
+}
